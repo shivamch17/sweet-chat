@@ -1,4 +1,4 @@
-export const host = "https://sweetchatserver-1-w3065663.deta.app";
+export const host = "https://sweetchat.onrender.com";
 export const loginRoute = `${host}/api/auth/login`;
 export const registerRoute = `${host}/api/auth/register`;
 export const logoutRoute = `${host}/api/auth/logout`;
