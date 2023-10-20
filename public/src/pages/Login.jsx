@@ -18,7 +18,7 @@ export default function Login() {
     theme: "dark",
   };
   useEffect(() => {
-    if (localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)) {
+    if (localStorage.getItem("chat-app-current-user")) {
       navigate("/");
     }
   }, []);
@@ -52,7 +52,7 @@ export default function Login() {
       }
       if (data.status === true) {
         localStorage.setItem(
-          process.env.REACT_APP_LOCALHOST_KEY,
+          "chat-app-current-user",
           JSON.stringify(data.user)
         );
 
